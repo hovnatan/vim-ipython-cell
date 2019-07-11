@@ -24,7 +24,7 @@ def execute_cell():
     # start_row and end_row are 1-indexed, need to subtract 1
     cell = "\n".join(vim.current.buffer[start_row-1:end_row])
     _copy_to_clipboard(cell)
-    _slimesend("%paste -q")
+    _slimesend("%paste")
 
 
 def jump_next_cell():
